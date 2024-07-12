@@ -1,0 +1,21 @@
+python is dynamicly typed language
+Array v/s List v/s tuple
+>>Array=Group of same element and have fixed size
+>>Array is not nuiltin data structure and need to be imported
+>>List is based on dynamic array
+****SUMMARY**** 
+Array: Homogeneous, mutable, memory-efficient, suitable for numerical operations.
+List: Heterogeneous, mutable, versatile, general-purpose container.
+Tuple: Heterogeneous, immutable, memory-efficient, suitable for fixed, read-only collections.
+EXAMPLES:
+import array
+arr = array.array('i', [1, 2, 3, 4])  # 'i' indicates an array of integers
+# refer to the image in folder for more type code
+arr[1] = 5  # Modifying the array
+########################################
+lst = [1, 2, 'a', 3.5]
+lst[1] = 'b'  # Modifying the list
+#########################################
+tpl = (1, 2, 'a', 3.5)
+# tpl[1] = 'b'  # This will raise an error because tuples are immutable
+

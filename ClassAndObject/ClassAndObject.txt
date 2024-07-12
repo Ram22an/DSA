@@ -1,0 +1,50 @@
+
+
+Suppose we call doctor and teacher
+Example Dr. X and Y sir/Madam
+Dr. and Sir/madam are noun and there name are proper noun 
+same as that dr. and sir/madam are class and their name are object
+Here are the component of class and objects
+in python atributes are both member function and variables
+###############################################
+1. Constructor/Destructor
+2. Access Specifier(private, public, proected)
+3. Encapsulation(it is the bundling of variables and methods that operate on the data into a single unit, typically a class.)
+4. Abstraction(it is the concept of hiding the complex implementation details and showing only the essential features of an object.)
+5. Inheritance(it is a mechanism where a new class (derived class) inherits the properties and behavior (methods) of an existing class (base class).)
+6. Polymorphism(it allows objects of different classes to be treated as objects of a common superclass. It is the ability of different objects to respond, each in its own way, to identical messages (or methods). Polymorphism is typically achieved through method overriding (runtime polymorphism) or method overloading (compile-time polymorphism).)
+##############################################
+in python there are two types of object class object and instance object
+class TestClass:
+    VAr1=5
+    def ShowFunction():
+        print("Hello")
+Obj=TestClass() # this is a instance object
+if we write TestClass() this will call a function which will return reference to this object
+if we write TestClass this is a class object and there could be only one class object only 
+the name of the class refernce to the class and it is also called as class object
+we don't have to create class object because when we create a class class object is created 
+and object inside the class are class object not the instance object 
+to create instance object we will use def __init__(self):
+it is a Constructor
+Obj=TestClass() # this is a instance object
+and this also mean __init__(Obj)
+###############################################
+there are 3 types of methods (function)
+1. instance method
+2. static method
+3. class method
+
+this is a instance method
+def f1(self):
+    pass
+
+# this is a static method
+@staticmethod
+def F2():
+    pass
+
+# this is a class method 
+@classmethod
+def F3(cls):
+    pass
