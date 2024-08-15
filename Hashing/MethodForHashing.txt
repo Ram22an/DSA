@@ -1,0 +1,15 @@
+there are mainly three methods for hashing and maping
+1. Division method (linear chaining)
+2. Folding method
+3. Mod square method
+here is the explanation of Division method
+ex: [2,5,16,28,139]
+and almax you can make a array of size 10 i.e. 0-9 
+what ever number we have we will try to arr[i]%10
+this also cause collision or having collision factor
+ex: in our array we have 28,8,38 and 28
+first we have sorted 28%10 is 8 so at place of 8 we have sorted 28 then 
+comes the 8 where we will sorte it then linear chaining comes to play
+8->28 ->8->38
+    \
+     -> 28 we are chaining it 
