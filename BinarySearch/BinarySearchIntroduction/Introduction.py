@@ -10,6 +10,8 @@ found=False
 # this iterative way to find target
 while Left<=Right:
     Mid=(Left+Right)//2
+    # or also mid=Left+(Right-Left)//2
+    # to overcome overflow
     if Arr[Mid]==Target:
         print(Target,Arr.index(Target))
         found=True
