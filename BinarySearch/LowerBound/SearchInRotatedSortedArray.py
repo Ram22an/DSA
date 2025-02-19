@@ -6,6 +6,7 @@ target=int(input())
 # for i in range(Size):
 #     if nums[i]==target:
 #         Found=i
+#         break
 # print(Found)
 try:
     print(nums.index(target))
