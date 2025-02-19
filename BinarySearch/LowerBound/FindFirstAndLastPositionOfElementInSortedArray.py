@@ -36,6 +36,10 @@
 # this i tried to understand the question and implemented the logic
 nums=list(map(int,input().strip().split()))
 target=int(input())
+if not nums:
+    print(-1, -1)
+if len(nums)==1 and nums[0]==target:
+    print(0,0)
 StartingPosition=-1
 EndingPosition=-1
 # here we will find upper bound that is arr[ind]>x
