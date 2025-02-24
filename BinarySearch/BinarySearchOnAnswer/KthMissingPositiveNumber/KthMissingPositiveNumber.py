@@ -31,3 +31,17 @@ k=int(input())
 # so when we encounter 2 so we shift 5 as 2 is smaller than 5 and it become 6
 # and for 3 also it become 7 and for 4 it become 8 and for 7 it become 9
 # for 11 as 9 is smaller then 11 so our answer is 9
+
+# we can apply binary search here but it is not tipical binary search
+left=0
+Size=len(arr)
+right=Size-1
+while left<=right:
+    mid=(left+right)//2
+    missing=arr[mid]-(mid+1)
+    if missing<k:
+        left=mid+1
+    else:
+        right=mid-1
+print(right+1+k,left+k)
+# this is the implementation of binary search
